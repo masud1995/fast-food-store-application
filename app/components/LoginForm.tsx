@@ -14,13 +14,17 @@ const LoginForm = () => {
         type="email"
         name="email"
         placeholder="Enter email here"
+        error={state?.errors?.email}
       />
+
       <TextInputField
         label="Password"
         type="password"
         name="password"
         placeholder="Enter password here"
+        error={state?.errors?.password}
       />
+
       <Button type="submit" className="w-full">
         Login
       </Button>
